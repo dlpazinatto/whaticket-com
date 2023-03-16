@@ -8,6 +8,7 @@ import { MoreVert, Replay } from "@material-ui/icons";
 import { i18n } from "../../translate/i18n";
 import api from "../../services/api";
 import TicketOptionsMenu from "../TicketOptionsMenu";
+import TransferTicketModal from "../TransferTicketModal";
 import ButtonWithSpinner from "../ButtonWithSpinner";
 import toastError from "../../errors/toastError";
 import { AuthContext } from "../../context/Auth/AuthContext";
@@ -22,6 +23,14 @@ const useStyles = makeStyles(theme => ({
 			margin: theme.spacing(1),
 		},
 	},
+	colorWarning: {
+		backgroundColor: "#f57c00",
+		color: 'white',
+	},
+	colorSuccess: {
+		backgroundColor: "#388e3c",
+		color: 'white',
+	}
 }));
 
 const TicketActionButtons = ({ ticket }) => {
@@ -29,8 +38,17 @@ const TicketActionButtons = ({ ticket }) => {
 	const history = useHistory();
 	const [anchorEl, setAnchorEl] = useState(null);
 	const [loading, setLoading] = useState(false);
+	const [transferTicketModalOpen, setTransferTicketModalOpen] = useState(false);
 	const ticketOptionsMenuOpen = Boolean(anchorEl);
 	const { user } = useContext(AuthContext);
+
+	const handleOpenTransferModal = e => {
+		setTransferTicketModalOpen(true);
+	};
+
+	const handleCloseTransferTicketModal = () => {
+		setTransferTicketModalOpen(false);
+	};
 
 	const handleOpenTicketOptionsMenu = e => {
 		setAnchorEl(e.currentTarget);
@@ -67,6 +85,8 @@ const TicketActionButtons = ({ ticket }) => {
 					loading={loading}
 					startIcon={<Replay />}
 					size="small"
+					color="success"
+					className={classes.colorSuccess}
 					onClick={e => handleUpdateTicketStatus(e, "open", user?.id)}
 				>
 					{i18n.t("messagesList.header.buttons.reopen")}
@@ -74,19 +94,29 @@ const TicketActionButtons = ({ ticket }) => {
 			)}
 			{ticket.status === "open" && (
 				<>
-					<ButtonWithSpinner
+					{/* <ButtonWithSpinner
 						loading={loading}
 						startIcon={<Replay />}
 						size="small"
 						onClick={e => handleUpdateTicketStatus(e, "pending", null)}
 					>
 						{i18n.t("messagesList.header.buttons.return")}
+					</ButtonWithSpinner> */}
+					<ButtonWithSpinner
+						loading={loading}
+						size="small"
+						variant="contained"
+						color="info"
+						className={classes.colorWarning} 
+						onClick={handleOpenTransferModal}
+					>
+						{i18n.t("ticketOptionsMenu.transfer")}
 					</ButtonWithSpinner>
 					<ButtonWithSpinner
 						loading={loading}
 						size="small"
 						variant="contained"
-						color="primary"
+						className={classes.colorSuccess}
 						onClick={e => handleUpdateTicketStatus(e, "closed", user?.id)}
 					>
 						{i18n.t("messagesList.header.buttons.resolve")}
@@ -113,6 +143,12 @@ const TicketActionButtons = ({ ticket }) => {
 					{i18n.t("messagesList.header.buttons.accept")}
 				</ButtonWithSpinner>
 			)}
+			<TransferTicketModal
+				modalOpen={transferTicketModalOpen}
+				onClose={handleCloseTransferTicketModal}
+				ticketid={ticket.id}
+				ticketWhatsappId={ticket.whatsappId}
+			/>
 		</div>
 	);
 };

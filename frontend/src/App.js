@@ -22,6 +22,9 @@ const App = () => {
       },
       palette: {
         primary: { main: "#2576d2" },
+        error: { main: "#e57373" },
+        success: { main: "#81c784" },
+        warning: { main: "#ffb74d" },
       },
     },
     locale

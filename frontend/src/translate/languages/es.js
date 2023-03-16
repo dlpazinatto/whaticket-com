@@ -37,7 +37,7 @@ const messages = {
       dashboard: {
         charts: {
           perDay: {
-            title: "Tickets hoy: ",
+            title: "Conversaciones hoy: ",
           },
         },
         messages: {
@@ -130,7 +130,7 @@ const messages = {
           deleteTitle: "Borrar",
           importTitlte: "Importar contactos",
           deleteMessage:
-            "¿Estás seguro que deseas borrar este contacto? Todos los tickets relacionados se perderán.",
+            "¿Estás seguro que deseas borrar este contacto? Todos los conversaciones relacionados se perderán.",
           importMessage:
             "¿Quieres importar todos los contactos desde tu teléfono?",
         },
@@ -219,11 +219,11 @@ const messages = {
         success: "Usuario guardado satisfactoriamente.",
       },
       chat: {
-        noTicketMessage: "Selecciona un ticket para empezar a chatear.",
+        noTicketMessage: "Selecciona un contacto para empezar a chatear.",
       },
       ticketsManager: {
         buttons: {
-          newTicket: "Nuevo",
+          newTicket: "Nuevo Mensaje",
         },
       },
       ticketsQueueSelect: {
@@ -231,7 +231,7 @@ const messages = {
       },
       tickets: {
         toasts: {
-          deleted: "El ticket en el que estabas ha sido borrado.",
+          deleted: "El conversación en el que estabas ha sido borrado.",
         },
         notification: {
           message: "Mensaje de",
@@ -242,14 +242,14 @@ const messages = {
           search: { title: "Buscar" },
         },
         search: {
-          placeholder: "Buscar tickets y mensajes.",
+          placeholder: "Buscar conversaciones y mensajes.",
         },
         buttons: {
           showAll: "Todos",
         },
       },
       transferTicketModal: {
-        title: "Transferir Ticket",
+        title: "Transferir Conversación",
         fieldLabel: "Escriba para buscar usuarios",
         fieldQueueLabel: "Transferir a la cola",
         fieldConnectionLabel: "Transferir to conexión",
@@ -267,13 +267,13 @@ const messages = {
         noTicketsTitle: "¡Nada acá!",
         connectionTitle: "Conexión que se está utilizando actualmente.",
         noTicketsMessage:
-          "No se encontraron tickets con este estado o término de búsqueda",
+          "No se encontraron conversaciones con este estado o término de búsqueda",
         buttons: {
           accept: "Acceptar",
         },
       },
       newTicketModal: {
-        title: "Crear Ticket",
+        title: "Crear Conversación",
         fieldLabel: "Escribe para buscar un contacto",
         add: "Añadir",
         buttons: {
@@ -285,7 +285,7 @@ const messages = {
         listItems: {
           dashboard: "Dashboard",
           connections: "Conexiones",
-          tickets: "Tickets",
+          tickets: "Conversas",
           contacts: "Contactos",
           quickAnswers: "Respuestas rápidas",
           queues: "Linhas",
@@ -317,7 +317,7 @@ const messages = {
         confirmationModal: {
           deleteTitle: "Eliminar",
           deleteMessage:
-            "¿Estás seguro? ¡Esta acción no se puede revertir! Los tickets en esa cola seguirán existiendo, pero ya no tendrán ninguna cola asignada.",
+            "¿Estás seguro? ¡Esta acción no se puede revertir! Los conversaciones en esa cola seguirán existiendo, pero ya no tendrán ninguna cola asignada.",
         },
       },
       queueSelect: {
@@ -361,7 +361,7 @@ const messages = {
         confirmationModal: {
           deleteTitle: "Borrar",
           deleteMessage:
-            "Toda la información del usuario se perderá. Los tickets abiertos de los usuarios se moverán a la cola.",
+            "Toda la información del usuario se perderá. Los conversaciones abiertos de los usuarios se moverán a la cola.",
         },
       },
       settings: {
@@ -382,7 +382,7 @@ const messages = {
           assignedTo: "Asignado a:",
           buttons: {
             return: "Devolver",
-            resolve: "Resolver",
+            resolve: "Finalizar",
             reopen: "Reabrir",
             accept: "Aceptar",
           },
@@ -391,7 +391,7 @@ const messages = {
       messagesInput: {
         placeholderOpen: "Escriba un mensaje o presione '' / '' para usar las respuestas rápidas registradas",
         placeholderClosed:
-          "Vuelva a abrir o acepte este ticket para enviar un mensaje.",
+          "Vuelva a abrir o acepte este conversación para enviar un mensaje.",
         signMessage: "Firmar",
       },
       contactDrawer: {
@@ -405,10 +405,10 @@ const messages = {
         delete: "Borrar",
         transfer: "Transferir",
         confirmationModal: {
-          title: "¿Borrar ticket #",
+          title: "¿Borrar conversación #",
           titleFrom: "del contacto ",
           message:
-            "¡Atención! Todos los mensajes Todos los mensajes relacionados con el ticket se perderán.",
+            "¡Atención! Todos los mensajes Todos los mensajes relacionados con el conversación se perderán.",
         },
         buttons: {
           delete: "Borrar",
@@ -445,7 +445,7 @@ const messages = {
         ERR_SENDING_WAPP_MSG:
           "Error al enviar el mensaje de WhatsApp. Verifique la página de conexiones.",
         ERR_DELETE_WAPP_MSG: "No se pudo borrar el mensaje de WhatsApp.",
-        ERR_OTHER_OPEN_TICKET: "Ya hay un ticket abierto para este contacto.",
+        ERR_OTHER_OPEN_TICKET: "Ya hay un conversación abierto para este contacto.",
         ERR_SESSION_EXPIRED: "Sesión caducada. Inicie sesión.",
         ERR_USER_CREATION_DISABLED:
           "La creación de usuarios fue deshabilitada por el administrador.",
@@ -454,11 +454,11 @@ const messages = {
         ERR_NO_SETTING_FOUND:
           "No se encontró ninguna configuración con este ID.",
         ERR_NO_CONTACT_FOUND: "No se encontró ningún contacto con este ID.",
-        ERR_NO_TICKET_FOUND: "No se encontró ningún ticket con este ID.",
+        ERR_NO_TICKET_FOUND: "No se encontró ningún conversación con este ID.",
         ERR_NO_USER_FOUND: "No se encontró ningún usuario con este ID.",
         ERR_NO_WAPP_FOUND: "No se encontró WhatsApp con este ID.",
         ERR_CREATING_MESSAGE: "Error al crear el mensaje en la base de datos.",
-        ERR_CREATING_TICKET: "Error al crear el ticket en la base de datos.",
+        ERR_CREATING_TICKET: "Error al crear el conversación en la base de datos.",
         ERR_FETCH_WAPP_MSG:
           "Error al obtener el mensaje en WhtasApp, tal vez sea demasiado antiguo.",
         ERR_QUEUE_COLOR_ALREADY_EXISTS:

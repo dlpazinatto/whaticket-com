@@ -89,6 +89,10 @@ const useStyles = makeStyles((theme) => ({
   hide: {
     display: "none !important",
   },
+	colorSuccess: {
+		backgroundColor: "#388e3c",
+		color: 'white',
+	}
 }));
 
 const TicketsManager = () => {
@@ -206,6 +210,8 @@ const TicketsManager = () => {
             <Button
               variant="outlined"
               color="primary"
+              size="small"
+              className={classes.colorSuccess}
               onClick={() => setNewTicketModalOpen(true)}
             >
               {i18n.t("ticketsManager.buttons.newTicket")}

@@ -36,7 +36,7 @@ const messages = {
       dashboard: {
         charts: {
           perDay: {
-            title: "Tickets today: ",
+            title: "Conversations today: ",
           },
         },
         messages: {
@@ -128,7 +128,7 @@ const messages = {
           deleteTitle: "Delete",
           importTitlte: "Import contacts",
           deleteMessage:
-            "Are you sure you want to delete this contact? All related tickets will be lost.",
+            "Are you sure you want to delete this contact? All related conversations will be lost.",
           importMessage: "Do you want to import all contacts from the phone?",
         },
         buttons: {
@@ -216,11 +216,11 @@ const messages = {
         success: "User saved successfully.",
       },
       chat: {
-        noTicketMessage: "Select a ticket to start chatting.",
+        noTicketMessage: "Select a contact to start chatting.",
       },
       ticketsManager: {
         buttons: {
-          newTicket: "New",
+          newTicket: "New Message",
         },
       },
       ticketsQueueSelect: {
@@ -228,25 +228,25 @@ const messages = {
       },
       tickets: {
         toasts: {
-          deleted: "The ticket you were on has been deleted.",
+          deleted: "The conversation you were on has been deleted.",
         },
         notification: {
           message: "Message from",
         },
         tabs: {
-          open: { title: "Inbox" },
-          closed: { title: "Resolved" },
+          open: { title: "Service" },
+          closed: { title: "Finalized" },
           search: { title: "Search" },
         },
         search: {
-          placeholder: "Search tickets and messages.",
+          placeholder: "Search conversations and messages.",
         },
         buttons: {
           showAll: "All",
         },
       },
       transferTicketModal: {
-        title: "Transfer Ticket",
+        title: "Transfer Conversation",
         fieldLabel: "Type to search for users",
         fieldQueueLabel: "Transfer to queue",
         fieldConnectionLabel: "Transfer to connection",
@@ -262,14 +262,14 @@ const messages = {
         pendingHeader: "Queue",
         assignedHeader: "Working on",
         noTicketsTitle: "Nothing here!",
-        noTicketsMessage: "No tickets found with this status or search term.",
+        noTicketsMessage: "No conversations found with this status or search term.",
         connectionTitle: "Connection that is currently being used.",
         buttons: {
           accept: "Accept",
         },
       },
       newTicketModal: {
-        title: "Create Ticket",
+        title: "Create Conversation",
         fieldLabel: "Type to search for a contact",
         add: "Add",
         buttons: {
@@ -281,7 +281,7 @@ const messages = {
         listItems: {
           dashboard: "Dashboard",
           connections: "Connections",
-          tickets: "Tickets",
+          tickets: "Conversations",
           contacts: "Contacts",
           quickAnswers: "Quick Answers",
           queues: "Queues",
@@ -313,7 +313,7 @@ const messages = {
         confirmationModal: {
           deleteTitle: "Delete",
           deleteMessage:
-            "Are you sure? It cannot be reverted! Tickets in this queue will still exist, but will not have any queues assigned.",
+            "Are you sure? It cannot be reverted! Conversations in this queue will still exist, but will not have any queues assigned.",
         },
       },
       queueSelect: {
@@ -356,7 +356,7 @@ const messages = {
         confirmationModal: {
           deleteTitle: "Delete",
           deleteMessage:
-            "All user data will be lost. Users' open tickets will be moved to queue.",
+            "All user data will be lost. Users' open conversations will be moved to queue.",
         },
       },
       settings: {
@@ -385,7 +385,7 @@ const messages = {
       },
       messagesInput: {
         placeholderOpen: "Type a message or press ''/'' to use the registered quick responses",
-        placeholderClosed: "Reopen or accept this ticket to send a message.",
+        placeholderClosed: "Reopen or accept this conversation to send a message.",
         signMessage: "Sign",
       },
       contactDrawer: {
@@ -399,9 +399,9 @@ const messages = {
         delete: "Delete",
         transfer: "Transfer",
         confirmationModal: {
-          title: "Delete ticket #",
+          title: "Delete conversation #",
           titleFrom: "from contact ",
-          message: "Attention! All ticket's related messages will be lost.",
+          message: "Attention! All conversation's related messages will be lost.",
         },
         buttons: {
           delete: "Delete",
@@ -439,7 +439,7 @@ const messages = {
           "Error sending WhatsApp message. Check connections page.",
         ERR_DELETE_WAPP_MSG: "Couldn't delete message from WhatsApp.",
         ERR_OTHER_OPEN_TICKET:
-          "There's already an open ticket for this contact.",
+          "There's already an open conversation for this contact.",
         ERR_SESSION_EXPIRED: "Session expired. Please login.",
         ERR_USER_CREATION_DISABLED:
           "User creation was disabled by administrator.",
@@ -447,11 +447,11 @@ const messages = {
         ERR_DUPLICATED_CONTACT: "A contact with this number already exists.",
         ERR_NO_SETTING_FOUND: "No setting found with this ID.",
         ERR_NO_CONTACT_FOUND: "No contact found with this ID.",
-        ERR_NO_TICKET_FOUND: "No ticket found with this ID.",
+        ERR_NO_TICKET_FOUND: "No conversation found with this ID.",
         ERR_NO_USER_FOUND: "No user found with this ID.",
         ERR_NO_WAPP_FOUND: "No WhatsApp found with this ID.",
         ERR_CREATING_MESSAGE: "Error while creating message on database.",
-        ERR_CREATING_TICKET: "Error while creating ticket on database.",
+        ERR_CREATING_TICKET: "Error while creating conversation on database.",
         ERR_FETCH_WAPP_MSG:
           "Error fetching the message in WhtasApp, maybe it is too old.",
         ERR_QUEUE_COLOR_ALREADY_EXISTS:

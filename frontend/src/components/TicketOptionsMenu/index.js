@@ -36,10 +36,10 @@ const TicketOptionsMenu = ({ ticket, menuOpen, handleClose, anchorEl }) => {
 		handleClose();
 	};
 
-	const handleOpenTransferModal = e => {
-		setTransferTicketModalOpen(true);
-		handleClose();
-	};
+	// const handleOpenTransferModal = e => {
+	// 	setTransferTicketModalOpen(true);
+	// 	handleClose();
+	// };
 
 	const handleCloseTransferTicketModal = () => {
 		if (isMounted.current) {
@@ -65,9 +65,9 @@ const TicketOptionsMenu = ({ ticket, menuOpen, handleClose, anchorEl }) => {
 				open={menuOpen}
 				onClose={handleClose}
 			>
-				<MenuItem onClick={handleOpenTransferModal}>
+				{/* <MenuItem onClick={handleOpenTransferModal}>
 					{i18n.t("ticketOptionsMenu.transfer")}
-				</MenuItem>
+				</MenuItem> */}
 				<Can
 					role={user.profile}
 					perform="ticket-options:deleteTicket"
