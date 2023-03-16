@@ -130,7 +130,7 @@ const messages = {
           deleteTitle: "Borrar",
           importTitlte: "Importar contactos",
           deleteMessage:
-            "¿Estás seguro que deseas borrar este contacto? Todos los conversaciones relacionados se perderán.",
+            "¿Estás seguro que deseas borrar este contacto? Todos las conversaciones relacionados se perderán.",
           importMessage:
             "¿Quieres importar todos los contactos desde tu teléfono?",
         },
@@ -317,7 +317,7 @@ const messages = {
         confirmationModal: {
           deleteTitle: "Eliminar",
           deleteMessage:
-            "¿Estás seguro? ¡Esta acción no se puede revertir! Los conversaciones en esa cola seguirán existiendo, pero ya no tendrán ninguna cola asignada.",
+            "¿Estás seguro? ¡Esta acción no se puede revertir! Las conversaciones en esa cola seguirán existiendo, pero ya no tendrán ninguna cola asignada.",
         },
       },
       queueSelect: {
@@ -361,7 +361,7 @@ const messages = {
         confirmationModal: {
           deleteTitle: "Borrar",
           deleteMessage:
-            "Toda la información del usuario se perderá. Los conversaciones abiertos de los usuarios se moverán a la cola.",
+            "Toda la información del usuario se perderá. Las conversaciones abiertos de los usuarios se moverán a la cola.",
         },
       },
       settings: {
@@ -445,7 +445,7 @@ const messages = {
         ERR_SENDING_WAPP_MSG:
           "Error al enviar el mensaje de WhatsApp. Verifique la página de conexiones.",
         ERR_DELETE_WAPP_MSG: "No se pudo borrar el mensaje de WhatsApp.",
-        ERR_OTHER_OPEN_TICKET: "Ya hay un conversación abierto para este contacto.",
+        ERR_OTHER_OPEN_TICKET: "Ya hay una conversación abierto para este contacto.",
         ERR_SESSION_EXPIRED: "Sesión caducada. Inicie sesión.",
         ERR_USER_CREATION_DISABLED:
           "La creación de usuarios fue deshabilitada por el administrador.",
