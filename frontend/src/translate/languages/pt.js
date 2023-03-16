@@ -36,7 +36,7 @@ const messages = {
       dashboard: {
         charts: {
           perDay: {
-            title: "Tickets hoje: ",
+            title: "Conversas hoje: ",
           },
         },
         messages: {
@@ -130,7 +130,7 @@ const messages = {
           deleteTitle: "Deletar ",
           importTitlte: "Importar contatos",
           deleteMessage:
-            "Tem certeza que deseja deletar este contato? Todos os tickets relacionados serão perdidos.",
+            "Tem certeza que deseja deletar este contato? Todos os conversas relacionados serão perdidos.",
           importMessage: "Deseja importas todos os contatos do telefone?",
         },
         buttons: {
@@ -218,37 +218,37 @@ const messages = {
         success: "Usuário salvo com sucesso.",
       },
       chat: {
-        noTicketMessage: "Selecione um ticket para começar a conversar.",
+        noTicketMessage: "Selecione um contato para começar a conversar.",
       },
       ticketsManager: {
         buttons: {
-          newTicket: "Novo",
+          newTicket: "Nova Mensagem",
         },
       },
       ticketsQueueSelect: {
-        placeholder: "Filas",
+        placeholder: "FILTRO",
       },
       tickets: {
         toasts: {
-          deleted: "O ticket que você estava foi deletado.",
+          deleted: "O conversa que você estava foi deletado.",
         },
         notification: {
           message: "Mensagem de",
         },
         tabs: {
-          open: { title: "Inbox" },
-          closed: { title: "Resolvidos" },
+          open: { title: "Atendimento" },
+          closed: { title: "Finalizados" },
           search: { title: "Busca" },
         },
         search: {
-          placeholder: "Buscar tickets e mensagens",
+          placeholder: "Buscar conversas e mensagens",
         },
         buttons: {
           showAll: "Todos",
         },
       },
       transferTicketModal: {
-        title: "Transferir Ticket",
+        title: "Transferir Conversa",
         fieldLabel: "Digite para buscar usuários",
         fieldQueueLabel: "Transferir para fila",
         fieldConnectionLabel: "Transferir para conexão",
@@ -265,14 +265,14 @@ const messages = {
         assignedHeader: "Atendendo",
         noTicketsTitle: "Nada aqui!",
         noTicketsMessage:
-          "Nenhum ticket encontrado com esse status ou termo pesquisado",
+          "Nenhum conversa encontrado com esse status ou termo pesquisado",
         connectionTitle: "Conexão que está sendo utilizada atualmente.",
         buttons: {
           accept: "Aceitar",
         },
       },
       newTicketModal: {
-        title: "Criar Ticket",
+        title: "Criar Conversa",
         fieldLabel: "Digite para pesquisar o contato",
         add: "Adicionar",
         buttons: {
@@ -284,10 +284,10 @@ const messages = {
         listItems: {
           dashboard: "Dashboard",
           connections: "Conexões",
-          tickets: "Tickets",
+          tickets: "Conversas",
           contacts: "Contatos",
           quickAnswers: "Respostas Rápidas",
-          queues: "Filas",
+          queues: "Filtros",
           administration: "Administração",
           users: "Usuários",
           settings: "Configurações",
@@ -303,7 +303,7 @@ const messages = {
         noTickets: "Nenhuma notificação.",
       },
       queues: {
-        title: "Filas",
+        title: "Filtro",
         table: {
           name: "Nome",
           color: "Cor",
@@ -316,11 +316,11 @@ const messages = {
         confirmationModal: {
           deleteTitle: "Excluir",
           deleteMessage:
-            "Você tem certeza? Essa ação não pode ser revertida! Os tickets dessa fila continuarão existindo, mas não terão mais nenhuma fila atribuída.",
+            "Você tem certeza? Essa ação não pode ser revertida! Os conversas dessa fila continuarão existindo, mas não terão mais nenhuma fila atribuída.",
         },
       },
       queueSelect: {
-        inputLabel: "Filas",
+        inputLabel: "Filtro",
       },
       quickAnswers: {
         title: "Respostas Rápidas",
@@ -360,7 +360,7 @@ const messages = {
         confirmationModal: {
           deleteTitle: "Excluir",
           deleteMessage:
-            "Todos os dados do usuário serão perdidos. Os tickets abertos deste usuário serão movidos para a fila.",
+            "Todos os dados do usuário serão perdidos. Os conversas abertos deste usuário serão movidos para a fila.",
         },
       },
       settings: {
@@ -381,7 +381,7 @@ const messages = {
           assignedTo: "Atribuído à:",
           buttons: {
             return: "Retornar",
-            resolve: "Resolver",
+            resolve: "Finalizar",
             reopen: "Reabrir",
             accept: "Aceitar",
           },
@@ -390,7 +390,7 @@ const messages = {
       messagesInput: {
         placeholderOpen: "Digite uma mensagem ou tecle ''/'' para utilizar as respostas rápidas cadastrada",
         placeholderClosed:
-          "Reabra ou aceite esse ticket para enviar uma mensagem.",
+          "Reabra ou aceite esse conversa para enviar uma mensagem.",
         signMessage: "Assinar",
       },
       contactDrawer: {
@@ -404,9 +404,9 @@ const messages = {
         delete: "Deletar",
         transfer: "Transferir",
         confirmationModal: {
-          title: "Deletar o ticket do contato",
+          title: "Deletar o conversa do contato",
           message:
-            "Atenção! Todas as mensagens relacionadas ao ticket serão perdidas.",
+            "Atenção! Todas as mensagens relacionadas ao conversa serão perdidas.",
         },
         buttons: {
           delete: "Excluir",
