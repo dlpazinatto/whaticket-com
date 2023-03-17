@@ -311,7 +311,7 @@ const Contacts = () => {
                       size="small"
                       onClick={() => handleSaveTicket(contact.id)}
                     >
-                      <WhatsAppIcon />
+                      <WhatsAppIcon htmlColor="#388e3c" />
                     </IconButton>
                     <IconButton
                       size="small"

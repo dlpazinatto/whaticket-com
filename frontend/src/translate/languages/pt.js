@@ -130,7 +130,7 @@ const messages = {
           deleteTitle: "Deletar ",
           importTitlte: "Importar contatos",
           deleteMessage:
-            "Tem certeza que deseja deletar este contato? Todos os conversas relacionados serão perdidos.",
+            "Tem certeza que deseja deletar este contato? Todos as conversas relacionados serão perdidos.",
           importMessage: "Deseja importas todos os contatos do telefone?",
         },
         buttons: {
@@ -230,7 +230,7 @@ const messages = {
       },
       tickets: {
         toasts: {
-          deleted: "O conversa que você estava foi deletado.",
+          deleted: "A conversa que você estava foi deletado.",
         },
         notification: {
           message: "Mensagem de",
@@ -265,7 +265,7 @@ const messages = {
         assignedHeader: "Atendendo",
         noTicketsTitle: "Nada aqui!",
         noTicketsMessage:
-          "Nenhum conversa encontrado com esse status ou termo pesquisado",
+          "Nenhum conversa encontrada com esse status ou termo pesquisado",
         connectionTitle: "Conexão que está sendo utilizada atualmente.",
         buttons: {
           accept: "Aceitar",
@@ -316,7 +316,7 @@ const messages = {
         confirmationModal: {
           deleteTitle: "Excluir",
           deleteMessage:
-            "Você tem certeza? Essa ação não pode ser revertida! Os conversas dessa fila continuarão existindo, mas não terão mais nenhuma fila atribuída.",
+            "Você tem certeza? Essa ação não pode ser revertida! As conversas dessa fila continuarão existindo, mas não terão mais nenhuma fila atribuída.",
         },
       },
       queueSelect: {
@@ -360,7 +360,7 @@ const messages = {
         confirmationModal: {
           deleteTitle: "Excluir",
           deleteMessage:
-            "Todos os dados do usuário serão perdidos. Os conversas abertos deste usuário serão movidos para a fila.",
+            "Todos os dados do usuário serão perdidos. As conversas abertos deste usuário serão movidos para a fila.",
         },
       },
       settings: {
@@ -390,7 +390,7 @@ const messages = {
       messagesInput: {
         placeholderOpen: "Digite uma mensagem ou tecle ''/'' para utilizar as respostas rápidas cadastrada",
         placeholderClosed:
-          "Reabra ou aceite esse conversa para enviar uma mensagem.",
+          "Reabra ou aceite essa conversa para enviar uma mensagem.",
         signMessage: "Assinar",
       },
       contactDrawer: {
@@ -404,9 +404,9 @@ const messages = {
         delete: "Deletar",
         transfer: "Transferir",
         confirmationModal: {
-          title: "Deletar o conversa do contato",
+          title: "Deletar a conversa do contato",
           message:
-            "Atenção! Todas as mensagens relacionadas ao conversa serão perdidas.",
+            "Atenção! Todas as mensagens relacionadas a conversa serão perdidas.",
         },
         buttons: {
           delete: "Excluir",
